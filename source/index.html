@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Александр Булах Веб-Разработка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Обо мне
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Мои работы
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Сайт резюме Александра Булаха</h1>
+      <section class="main">
+        <h2 class="visually-hidden">Александр Булах</h2>
+        <img src="img/logo.svg" alt="Логотип Булах" width="250" height="90">
+        <p class="main__subtitle">
+          Веб-Разработка
+        </p>
+      </section>
+      <section class="about-me">
+        <h2 class="about-me__title title">Обо мне</h2>
+        <img class="about-me__img" src="img/photo.jpg" alt="Фото Александра" width="171" height="229">
+        <p class="about-me__text text">
+          Меня зовут Булах Александр. Я веб-разработчик из Санкт-Петербурга. Проходил обучение в HTML академии в 2020 году.
+          Работаю с HTML,CSS и JavaScript.
+          Знаю кроссбраузерную и адаптивную верстку.
+          В разработке использую препроцессоры Sass/Less, сборщики Gulp и Webpack
+          (для JS).
+          Применяю принципы доступности.
+        </p>
+      </section>
+      <section class="my-works">
+        <h2 class="my-works__title title">Мои работы</h2>
+        <ul class="my-works__list">
+          <li class="my-works__item my-works__item--techno">
+            <img src="img/techno.jpg" alt="Скрин магазина Техномарт" width="271" height="271">
+            <p class="my-works__text">Интернет-магазин «Техномарт»</p>
+          </li>
+          <li class="my-works__item my-works__item--catenergy">
+            <img src="img/cat_mobile.jpg" alt="Скрин магазина Техномарт" width="271" height="271">
+            <p class="my-works__text">Интернет-магазин «КэтЭнерджи»</p>
+          </li>
+          <li class="my-works__item my-works__item--keksobooking">
+            <img src="img/keksobooking.jpg" alt="Скрин магазина Техномарт" width="271" height="271">
+            <p class="my-works__text">Сервис по поиску жилья «Кексобукинг»</p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2 class="contact__title title">Контакты</h2>
+        <div class="contact__wrapper">
+          <p class="contact__text">bulakh94@gmail.com</p>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="contact__link" href="#" aria-label="Мой аккаунт в Телеграм">
+                <img class="contact__icon contact__icon--telegram" src="img/telegram.svg" alt="Иконка телеграм" width="29" height="29">
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link" href="#" aria-label="Мой аккаунт в Телеграм">
+                <img class="contact__icon contact__icon--academy" src="img/html_academy.svg" alt="Иконка HTML Academy" width="27" height="34">
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link" href="#" aria-label="Мой аккаунт в Телеграм">
+                <img class="contact__icon contact__icon--github" src="img/github.svg" alt="Иконка GitHub" width="40" height="40">
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link" href="#" aria-label="Мой аккаунт в Телеграм">
+                <img class="contact__icon contact__icon--codepen" src="img/codepen.svg" alt="Иконка CodePen" width="34" height="34">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <button class="button-up" type="button">
+        <img class="button-up__icon" src="img/up.svg" alt="#" width="30" height="30">
+      </button>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="vissually-hidden">Остальная информация</h2>
+      <div class="page-footer__wrapper">
+        <p class="page-footer__text">2020</p>
+        <p class="page-footer__text">bulakh.ru</p>
+      </div>
+    </footer>
+  </body>
+</html>
