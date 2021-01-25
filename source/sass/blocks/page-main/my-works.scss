@@ -1,0 +1,43 @@
+.my-works {
+  position: relative;
+}
+
+.my-works__item {
+  margin-bottom: 1.88rem;
+}
+
+.my-works__text {
+  text-align: left;
+}
+
+.my-works__img-wrap {
+  width: 271px;
+  height: 271px;
+  margin-bottom: 1.18rem;
+  margin-left: -0.18rem;
+
+  background-color: $special-1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+
+  &--techno {
+    background-image: url("../img/techno.jpg");
+  }
+
+  &--catenergy {
+    background-image: url("../img/cat_mobile.jpg");
+  }
+
+  &--keksobooking {
+    background-image: url("../img/keksobooking.jpg");
+  }
+}
+
+.my-works__decorate-code {
+  bottom: -20%;
+  left: -80%;
+
+  width: auto;
+}

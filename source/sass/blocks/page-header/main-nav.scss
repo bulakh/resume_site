@@ -1,0 +1,11 @@
+.main-nav {
+  margin-bottom: -1.55rem;
+}
+
+.main-nav--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
