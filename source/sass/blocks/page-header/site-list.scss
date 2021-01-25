@@ -1,0 +1,20 @@
+.site-list {
+  margin-top: 0.75em;
+  margin-left: -0.4em;
+}
+
+.site-list__item {
+  margin-bottom: 0.8em;
+}
+
+.site-list__item--main {
+  display: none;
+}
+
+.site-list__link {
+  font-size: 1.18rem;
+  line-height: 1.5em;
+  font-weight: 550;
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,26 @@
+.decorate-code {
+  position: absolute;
+  z-index: -1;
+  // outline: 1px solid black;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.decorate-code__text {
+  font-family: $ibm;
+  font-size: 1.35rem;
+  line-height: 1.25em;
+  font-weight: 600;
+  color: $special-2;
+  // color: grey;
+  text-align: left;
+
+  &--my-works {
+    font-size: 1.76rem;
+  }
+
+  &--contact {
+    font-size: 3.59rem;
+    line-height: 1.3em;
+  }
+}

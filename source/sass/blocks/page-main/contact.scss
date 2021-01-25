@@ -1,0 +1,24 @@
+.contact {
+  position: relative;
+}
+
+.contact__text {
+  margin-bottom: 1.76em;
+}
+
+.contact__list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+
+  margin-left: -8px;
+}
+
+.contact__decorate-code {
+  bottom: -38%;
+  right: -1%;
+
+  width: 230%;
+  height: 384px;
+}
