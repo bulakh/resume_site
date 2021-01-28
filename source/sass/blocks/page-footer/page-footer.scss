@@ -1,13 +1,19 @@
 .page-footer {
+  margin-bottom: 1.5rem;
+
   font-size: 0.88rem;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 1rem;
+
+    font-size: 0.76rem;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
   justify-content: space-between;
-
-  margin-left: -0.24rem;
 
   border-top: 1px solid $special-1;
 }

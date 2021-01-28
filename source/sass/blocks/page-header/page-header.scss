@@ -1,19 +1,22 @@
 .page-header {
   position: relative;
 
-  margin-top: 2.82rem;
-  margin-bottom: 8.78rem;
+  margin-top: 3.25rem;
+  margin-bottom: 9.2rem;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0.88rem;
+    margin-bottom: 9.85rem;
+  }
 }
 
 .page-header__toggle {
   position: absolute;
-  top: -35px;
-  right: 6vw;
+  top: -34px;
+  right: 7.3vw;
 
   width: 24px;
   height: 22px;
-  // margin-left: 14.41rem;
-  // margin-top: 0.76rem;
 
   background-repeat: no-repeat;
   border: none;

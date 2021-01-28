@@ -1,6 +1,15 @@
 .site-list {
   margin-top: 0.75em;
   margin-left: -0.4em;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: end;
+    gap: 37px;
+  }
 }
 
 .site-list__item {
@@ -9,6 +18,10 @@
 
 .site-list__item--main {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .site-list__link {
@@ -17,4 +30,10 @@
   font-weight: 550;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 0.94rem;
+    line-height: 1.25em;
+    font-weight: 300;
+  }
 }

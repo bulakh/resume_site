@@ -1,5 +1,10 @@
 .text {
-  margin-left: -0.18rem;
-
+  margin-left: 0.25em;
   text-align: left;
+}
+
+.text__break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

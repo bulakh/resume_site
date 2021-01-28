@@ -1,5 +1,12 @@
+.main {
+  margin-left: 0.3em;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 7.75em;
+  }
+}
+
 .main__title {
-  margin-left: -0.05em;
   margin-bottom: 0.15em;
 
   font-size: 2.24rem;
@@ -10,12 +17,25 @@
   &--second {
     margin-left: 3.5em;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0.1em;
+
+    font-size: 3.53rem;
+    line-height: 1.15em;
+
+    &--second {
+      margin-left: 4.2em;
+    }
+  }
 }
 
 .main__subtitle {
-  margin-left: -0.2em;
-
   font-size: 1.06em;
   font-weight: 100;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.29rem;
+  }
 }
