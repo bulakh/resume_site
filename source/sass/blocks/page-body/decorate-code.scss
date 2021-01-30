@@ -1,7 +1,6 @@
 .decorate-code {
   position: absolute;
   z-index: -1;
-  // outline: 1px solid black;
   width: 100vw;
   overflow: hidden;
 }
@@ -11,8 +10,7 @@
   font-size: 1.35rem;
   line-height: 1.25em;
   font-weight: 600;
-  color: $special-2;
-  // color: grey;
+  color: $special-3;
   text-align: left;
 
   &--my-works {
@@ -23,4 +21,39 @@
     font-size: 3.59rem;
     line-height: 1.3em;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 2.94rem;
+
+    &--contact {
+      position: absolute;
+      left: 16.18rem;
+      top: 1.24rem;
+
+      font-size: 7.41rem;
+    }
+
+    &--about-me-second {
+      font-size: 6.47rem;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 5.65rem;
+
+    &--contact {
+      left: 16.18rem;
+      top: 1.24rem;
+
+      font-size: 8.65rem;
+    }
+
+    &--about-me-second {
+      font-size: 8.65rem;
+    }
+  }
+}
+
+.decorate-code__code {
+  font-family: inherit;
 }

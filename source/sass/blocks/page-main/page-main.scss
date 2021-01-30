@@ -1,22 +1,64 @@
 .page-main {
   position: relative;
   margin-bottom: 4.59rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13.6rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26.4rem;
+  }
 }
 
 .page-main__main {
   margin-bottom: 10.45rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13.7rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35.7rem;
+  }
 }
 
 .page-main__about-me {
   margin-bottom: 9.2rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30.65rem;
+  }
 }
 
 .page-main__my-works {
   margin-bottom: 9rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10.1rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37.6rem;
+  }
 }
 
 .page-main__button-up {
   position: fixed;
+  right: 0.25rem;
   bottom: 5.29rem;
-  right: 0.18rem;
+
+  @media (min-width: $tablet-width) {
+    right: 1.4rem;
+    bottom: 7.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6.1rem;
+    bottom: 12.1rem;
+  }
 }

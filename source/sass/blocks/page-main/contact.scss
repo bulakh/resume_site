@@ -2,23 +2,93 @@
   position: relative;
 }
 
+.contact__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 6.3%;
+  }
+}
+
 .contact__text {
   margin-bottom: 1.76em;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 2.9em;
+    margin-left: 7.75em;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    margin-left: 10.3em;
+    margin-bottom: 0;
+  }
 }
 
 .contact__list {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 17px;
 
-  margin-left: -8px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 50px 50px 50px 50px;
+    place-content: center;
+    gap: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
+}
+
+.contact__icon {
+  @media (min-width: $tablet-width) {
+    &--telegram {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--academy {
+      width: 37px;
+      height: 47px;
+    }
+
+    &--github {
+      width: 50px;
+      height: 50px;
+    }
+
+    &--codepen {
+      width: 44px;
+      height: 44px;
+    }
+  }
 }
 
 .contact__decorate-code {
   bottom: -38%;
-  right: -1%;
+  right: 0;
 
   width: 230%;
   height: 384px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -138%;
+
+    width: 246%;
+    height: 774px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -124%;
+
+    width: 206%;
+    height: 165vh;
+  }
+}
+
+.contact__navigation {
+  top: 52.5%;
+  right: 6.45%;
 }
