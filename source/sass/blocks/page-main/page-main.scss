@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 13.6rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26.4rem;
+  }
 }
 
 .page-main__main {
@@ -12,6 +16,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 13.7rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35.7rem;
   }
 }
 
@@ -21,6 +29,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 14.5rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30.65rem;
+  }
 }
 
 .page-main__my-works {
@@ -28,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10.1rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37.6rem;
   }
 }
 
@@ -39,5 +55,10 @@
   @media (min-width: $tablet-width) {
     right: 1.4rem;
     bottom: 7.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 6.1rem;
+    bottom: 12.1rem;
   }
 }

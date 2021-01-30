@@ -10,6 +10,12 @@
     justify-content: end;
     gap: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 5.65rem;
+
+    gap: 4.55%;
+  }
 }
 
 .site-list__item {
@@ -35,5 +41,9 @@
     font-size: 0.94rem;
     line-height: 1.25em;
     font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.18rem;
   }
 }

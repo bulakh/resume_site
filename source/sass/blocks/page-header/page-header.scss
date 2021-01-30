@@ -8,6 +8,11 @@
     margin-top: 0.88rem;
     margin-bottom: 9.85rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0.65rem;
+    margin-bottom: 20rem;
+  }
 }
 
 .page-header__toggle {

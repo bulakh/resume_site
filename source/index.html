@@ -54,21 +54,27 @@
         <p class="main__subtitle">
           Веб-разработка
         </p>
+        <div class="navigation main__navigation">
+          <button class="navigation__button navigation__button--active" type="button" aria-label="Переход на главную"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Обо мне"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Мои работы"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Контакты"></button>
+        </div>
       </section>
       <section class="page-main__about-me about-me container">
         <h2 class="about-me__title title">Обо мне</h2>
         <div class="about-me__wrap">
           <p class="about-me__first-text text">
-            Меня зовут Булах Александр.<br> Я веб-разработчик из<br>
-            Санкт-Петербурга.
+            Меня зовут Булах Александр.<br> Я веб-разработчик из
+            <nobr>Санкт-Петербурга</nobr>.
           </p>
           <img class="about-me__img" src="img/photo.jpg" alt="Фото Александра" width="171" height="229">
           <p class="about-me__second-text text">
             Проходил обучение в HTML академии в 2020 году.<br><br>
-            Знаю HTML,CSS и JavaScript.
+            Знаю HTML,CSS и JavaScript.<br>
             Работаю с кроссбраузерной и адаптивной версткой.<br>
-            В разработке использую препроцессоры Sass/Less, сборщики Gulp и Webpack<br class="text__break">
-            (для JS).<br class="text__break">
+            В разработке использую препроцессоры Sass/Less, сборщики Gulp и Webpack<br>
+            (для JS).<br>
             Руководствуюсь принципами доступности.
           </p>
         </div>
@@ -89,6 +95,12 @@
                       src = src.parentElement
             </code>
           </pre>
+        </div>
+        <div class="navigation about-me__navigation">
+          <button class="navigation__button" type="button" aria-label="Переход на главную"></button>
+          <button class="navigation__button navigation__button--active" type="button" aria-label="Переход в Обо мне"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Мои работы"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Контакты"></button>
         </div>
       </section>
       <section class="page-main__my-works my-works container">
@@ -121,6 +133,12 @@
               color: $white;
             </code>
           </pre>
+        </div>
+        <div class="navigation my-works__navigation">
+          <button class="navigation__button" type="button" aria-label="Переход на главную"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Обо мне"></button>
+          <button class="navigation__button navigation__button--active" type="button" aria-label="Переход в Мои работы"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Контакты"></button>
         </div>
       </section>
       <section class="page-main__contact contact container">
@@ -158,6 +176,12 @@
               &lt;/div&gt;
             </code>
           </pre>
+        </div>
+        <div class="navigation contact__navigation">
+          <button class="navigation__button" type="button" aria-label="Переход на главную"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Обо мне"></button>
+          <button class="navigation__button" type="button" aria-label="Переход в Мои работы"></button>
+          <button class="navigation__button navigation__button--active" type="button" aria-label="Переход в Контакты"></button>
         </div>
       </section>
       <button class="page-main__button-up button-up visually-hidden" type="button">

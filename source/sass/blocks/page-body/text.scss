@@ -1,10 +1,16 @@
 .text {
   margin-left: 0.25em;
   text-align: left;
-}
 
-.text__break {
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    margin-top: -0.29rem;
+
+    font-size: 1.18rem;
+    line-height: 1.5em;
   }
 }

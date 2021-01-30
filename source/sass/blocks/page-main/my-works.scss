@@ -9,6 +9,12 @@
     column-gap: 3.53rem;
     margin-left: 3.12rem;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 245px 245px 245px;
+    column-gap: 4rem;
+    margin-left: 12.2rem;
+  }
 }
 
 .my-works__item {
@@ -26,6 +32,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 0.88rem;
+    line-height: 1.33em;
   }
 }
 
@@ -60,6 +71,16 @@
       background-image: url("../img/cat_tablet.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 245px;
+    margin-bottom: 1.2rem;
+
+    &--catenergy {
+      background-image: url("../img/cat_desktop.jpg");
+    }
+  }
 }
 
 .my-works__decorate-code {
@@ -72,4 +93,14 @@
     bottom: -39%;
     left: -88%;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: -167%;
+    left: -68%;
+  }
+}
+
+.my-works__navigation {
+  top: 37.5%;
+  right: 6.45%;
 }

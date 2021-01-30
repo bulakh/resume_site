@@ -13,4 +13,11 @@
 
     font-size: 1.41rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2.47em;
+    margin-left: 6.9em;
+
+    font-size: 1.76rem;
+  }
 }

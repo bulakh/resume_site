@@ -1,8 +1,14 @@
 .main {
+  position: relative;
+
   margin-left: 0.3em;
 
   @media (min-width: $tablet-width) {
     margin-left: 7.75em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 12.15em;
   }
 }
 
@@ -28,6 +34,14 @@
       margin-left: 4.2em;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 6.88rem;
+
+    &--second {
+      margin-left: 3.57em;
+    }
+  }
 }
 
 .main__subtitle {
@@ -38,4 +52,12 @@
   @media (min-width: $tablet-width) {
     font-size: 1.29rem;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 2.35rem;
+  }
+}
+
+.main__navigation {
+  top: 22.3%;
 }
