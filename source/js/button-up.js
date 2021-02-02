@@ -1,15 +1,18 @@
-const buttonUp = document.querySelector('.button-up');
-const heightMobile = 568;
+"use strict"
+
+var buttonUp = document.querySelector('.button-up');
+var scrollHeight = document.documentElement.scrollHeight;
+var clientHeight=document.documentElement.clientHeight;
 
 
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > heightMobile) {
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset === scrollHeight - clientHeight) {
     buttonUp.classList.remove('visually-hidden');
   } else {
     buttonUp.classList.add('visually-hidden');
   }
 })
 
-buttonUp.addEventListener('click', function () {
+buttonUp.addEventListener('click', function() {
   window.scrollTo(0, 0);
 })

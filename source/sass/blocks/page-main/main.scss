@@ -1,14 +1,16 @@
 .main {
   position: relative;
 
-  margin-left: 0.3em;
+  // margin-left: 0.3em;
+}
+
+.main__wrapper {
+  display: grid;
+  place-content: center;
+  margin-left: -1.5rem;
 
   @media (min-width: $tablet-width) {
-    margin-left: 7.75em;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 12.15em;
+    margin-left: auto;
   }
 }
 
@@ -26,6 +28,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0.1em;
+    margin-left: -0.3em;
 
     font-size: 3.53rem;
     line-height: 1.15em;
@@ -37,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 6.88rem;
+    margin-left: -0.4em;
 
     &--second {
       margin-left: 3.57em;
@@ -50,14 +54,14 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    margin-left: -0.8em;
+
     font-size: 1.29rem;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: -1.2em;
+
     font-size: 2.35rem;
   }
-}
-
-.main__navigation {
-  top: 22.3%;
 }

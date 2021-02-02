@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.contact__wrapper {
+.contact__grid {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -42,7 +42,23 @@
   }
 }
 
+.contact__item {
+  &:hover {
+    background-color: $basic-text;
+  }
+
+  &:hover > .contact__link > .contact__icon {
+    fill: $basic-bg;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .contact__icon {
+  fill: $basic-text;
+
   @media (min-width: $tablet-width) {
     &--telegram {
       width: 40px;
@@ -67,10 +83,9 @@
 }
 
 .contact__decorate-code {
-  bottom: -38%;
+  bottom: -74%;
   right: 0;
 
-  width: 230%;
   height: 384px;
 
   @media (min-width: $tablet-width) {
@@ -80,15 +95,16 @@
     height: 774px;
   }
 
-  @media (min-width: $desktop-width) {
-    top: -124%;
+  @media (min-width: $laptop-width) {
+    left: -63rem;
 
-    width: 206%;
-    height: 165vh;
+    width: auto;
   }
-}
 
-.contact__navigation {
-  top: 52.5%;
-  right: 6.45%;
+  @media (min-width: $desktop-width) {
+    top: -14rem;
+    left: -64rem;
+
+    height: 915px;
+  }
 }

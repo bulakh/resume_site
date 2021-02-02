@@ -84,23 +84,18 @@
 }
 
 .my-works__decorate-code {
-  bottom: -20%;
-  left: -80%;
+  bottom: -13rem;
+  left: -20rem;
 
   width: auto;
 
   @media (min-width: $tablet-width) {
     bottom: -39%;
-    left: -88%;
+    left: -35rem;
   }
 
   @media (min-width: $desktop-width) {
     bottom: -167%;
-    left: -68%;
+    left: -58rem;
   }
-}
-
-.my-works__navigation {
-  top: 37.5%;
-  right: 6.45%;
 }

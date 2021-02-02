@@ -2,8 +2,9 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 7.55%;
+    position: fixed;
+    top: 40%;
+    right: 6.45%;
 
     display: grid;
     gap: 40px;
