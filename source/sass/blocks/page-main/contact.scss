@@ -59,10 +59,6 @@
 .contact__icon {
   fill: $basic-text;
 
-  // &:hover {
-  //   fill: $basic-bg;
-  // }
-
   @media (min-width: $tablet-width) {
     &--telegram {
       width: 40px;
@@ -112,4 +108,3 @@
     height: 915px;
   }
 }
-
