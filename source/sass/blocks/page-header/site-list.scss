@@ -41,6 +41,14 @@
     font-size: 0.94rem;
     line-height: 1.25em;
     font-weight: 300;
+
+    &:hover {
+      font-weight: 550;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   @media (min-width: $desktop-width) {

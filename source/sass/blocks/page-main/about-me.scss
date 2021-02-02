@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.about-me__wrap {
+.about-me__grid {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,36 +53,55 @@
 }
 
 .about-me__decorate-code {
-  bottom: -38%;
-  right: 0;
+  bottom: -13rem;
+  left: -13%;
+
+  width: 113vw;
 
   &--second {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    bottom: -272%;
+    bottom: -252%;
+    left: 0;
+
+    width: 100vw;
 
     &--second {
       display: block;
 
-      bottom: -129%;
-      left: -157%;
+      bottom: -117%;
+      left: -65rem;
+      width: auto;
+    }
+  }
+
+  @media (min-width: $laptop-width) {
+    left: 8rem;
+
+    width: 86vw;
+
+    &--second {
+      left: -65rem;
+
       width: auto;
     }
   }
 
   @media (min-width: $desktop-width) {
-    top: -94%;
+    top: -95%;
+    left: 3rem;
+
+    width: 96vw;
 
     &--second {
       top: 79%;
-      left: -98%;
+      left: -80rem;
+
+      width: auto;
     }
   }
 }
 
-.about-me__navigation {
-  top: 35%;
-  right: 6.45%;
-}
+
