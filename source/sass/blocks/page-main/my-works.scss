@@ -40,6 +40,27 @@
   }
 }
 
+.my-works__link {
+  &:hover > .my-works__img-wrap {
+    animation-name: background-pos;
+    animation-duration: 6s;
+  }
+}
+
+@keyframes background-pos {
+  from {
+    background-position: top;
+  }
+
+  50% {
+    background-position: bottom;
+  }
+
+  to {
+    background-position: top;
+  }
+}
+
 .my-works__img-wrap {
   width: 271px;
   height: 271px;

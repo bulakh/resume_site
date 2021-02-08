@@ -13,6 +13,12 @@
   color: $special-3;
   text-align: left;
 
+  &--about-me {
+    position: absolute;
+    left: -3rem;
+    top: 0;
+  }
+
   &--my-works {
     font-size: 1.76rem;
   }
@@ -29,6 +35,11 @@
   @media (min-width: $tablet-width) {
     font-size: 2.94rem;
 
+    &--about-me {
+      top: -3rem;
+      left: -0.5rem;
+    }
+
     &--contact {
       position: absolute;
       left: 16.18rem;
@@ -39,6 +50,12 @@
 
     &--about-me-second {
       font-size: 6.47rem;
+    }
+  }
+
+  @media (min-width: $laptop-width) {
+    &--about-me {
+      left: 8.5rem;
     }
   }
 
