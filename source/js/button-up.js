@@ -1,4 +1,4 @@
-"use strict"
+// "use strict"
 
 var buttonUp = document.querySelector('.button-up');
 var scrollHeight = document.documentElement.scrollHeight;

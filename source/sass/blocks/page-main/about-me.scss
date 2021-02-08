@@ -54,52 +54,48 @@
 
 .about-me__decorate-code {
   bottom: -13rem;
-  left: -13%;
+  right: 0;
 
-  width: 113vw;
+  height: 16rem;
 
   &--second {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    bottom: -252%;
-    left: 0;
+    bottom: -63rem;
 
-    width: 100vw;
+    height: 26rem;
 
     &--second {
       display: block;
 
-      bottom: -117%;
+      bottom: -13rem;
       left: -65rem;
       width: auto;
     }
   }
 
   @media (min-width: $laptop-width) {
-    left: 8rem;
-
-    width: 86vw;
+    left: -1rem;
 
     &--second {
       left: -65rem;
-
-      width: auto;
     }
   }
 
   @media (min-width: $desktop-width) {
-    top: -95%;
-    left: 3rem;
+    top: -85%;
+    left: -5rem;
 
-    width: 96vw;
+    height: 47rem;
+    width: auto;
 
     &--second {
       top: 79%;
       left: -80rem;
 
-      width: auto;
+      // width: auto;
     }
   }
 }
