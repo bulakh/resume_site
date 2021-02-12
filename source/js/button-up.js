@@ -1,18 +1,18 @@
-// "use strict"
+"use strict";
 
-var buttonUp = document.querySelector('.button-up');
-var scrollHeight = document.documentElement.scrollHeight;
-var clientHeight=document.documentElement.clientHeight;
+const buttonUp = document.querySelector(`.button-up`);
+const scrollHeight = document.documentElement.scrollHeight;
+const clientHeight = document.documentElement.clientHeight;
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener(`scroll`, function () {
   if (window.pageYOffset === scrollHeight - clientHeight) {
-    buttonUp.classList.remove('visually-hidden');
+    buttonUp.classList.remove(`visually-hidden`);
   } else {
-    buttonUp.classList.add('visually-hidden');
+    buttonUp.classList.add(`visually-hidden`);
   }
-})
+});
 
-buttonUp.addEventListener('click', function() {
+buttonUp.addEventListener(`click`, function () {
   window.scrollTo(0, 0);
-})
+});
