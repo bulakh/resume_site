@@ -20,10 +20,19 @@
   border: none;
 
   cursor: pointer;
+
+  &:hover:not(.navigation__button--active),
+  &:focus:not(.navigation__button--active) {
+    outline: 4px solid $special-5;
+  }
 }
 
 .navigation__button--active {
   box-shadow: 0 0 0 4px $special-4;
 
   cursor: default;
+
+  &:focus {
+    outline: none;
+  }
 }

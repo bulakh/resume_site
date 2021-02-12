@@ -16,23 +16,18 @@
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--main">
-                <a class="site-list__link" href="#">
-                  Главная
-                </a>
-              </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">
+                <a class="site-list__link" href="#about-me">
                   Обо мне
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">
+                <a class="site-list__link" href="#my-works">
                   Мои работы
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">
+                <a class="site-list__link" href="#contact">
                   Контакты
                 </a>
               </li>
@@ -44,7 +39,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Сайт резюме Александра Булаха</h1>
-      <section class="page-main__main main">
+      <section class="page-main__main main" id="main">
         <div class="main__wrapper container">
           <h2 class="main__title">
             Александр<br>
@@ -55,13 +50,13 @@
           </p>
         </div>
         <div class="navigation main__navigation">
-          <button class="navigation__button navigation__button--active" type="button" aria-label="Переход на главную"></button>
-          <button class="navigation__button" type="button" aria-label="Переход в Обо мне"></button>
-          <button class="navigation__button" type="button" aria-label="Переход в Мои работы"></button>
-          <button class="navigation__button" type="button" aria-label="Переход в Контакты"></button>
+          <button class="navigation__button navigation__button--main navigation__button--active" type="button" aria-label="Переход на главную"></button>
+          <button class="navigation__button navigation__button--about-me" type="button" aria-label="Переход в Обо мне"></button>
+          <button class="navigation__button navigation__button--my-works" type="button" aria-label="Переход в Мои работы"></button>
+          <button class="navigation__button navigation__button--contact" type="button" aria-label="Переход в Контакты"></button>
         </div>
       </section>
-      <section class="page-main__about-me about-me">
+      <section class="page-main__about-me about-me" id="about-me">
         <div class="about-me__wrapper container">
           <h2 class="about-me__title title">Обо мне</h2>
           <div class="about-me__grid">
@@ -99,7 +94,7 @@
           </pre>
         </div>
       </section>
-      <section class="page-main__my-works my-works">
+      <section class="page-main__my-works my-works" id="my-works">
         <div class="my-works__wrapper container">
           <h2 class="my-works__title title">Мои работы</h2>
           <ul class="my-works__list">
@@ -136,7 +131,7 @@
           </pre>
         </div>
       </section>
-      <section class="page-main__contact contact">
+      <section class="page-main__contact contact" id="contact">
         <div class="contact__wrapper container">
           <h2 class="contact__title title">Контакты</h2>
           <div class="contact__grid">
@@ -197,8 +192,6 @@
         <p class="page-footer__text">bulakh.ru</p>
       </div>
     </footer>
-    <script src="js/toggle.js"></script>
-    <script src="js/button-up.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="js/bundle.js"></script>
   </body>
 </html>

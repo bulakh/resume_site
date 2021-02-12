@@ -6,28 +6,20 @@
     margin-top: 0;
 
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: end;
-    gap: 37px;
+    gap: 5.15%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 5.65rem;
+    margin-right: 2.45rem;
 
-    gap: 4.55%;
+    gap: 4.45%;
   }
 }
 
 .site-list__item {
   margin-bottom: 0.8em;
-}
-
-.site-list__item--main {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
 }
 
 .site-list__link {

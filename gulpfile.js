@@ -11,22 +11,22 @@ const htmlmin = require("gulp-htmlmin");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-const uglify = require("gulp-uglify");
-const pipeline = require("readable-stream").pipeline;
 const del = require("del");
-// const webpack = require('webpack');
-// const webpackStream = require('webpack-stream');
-// const webpackConfig = require('./webpack.config.js');
+const webpackStream = require("webpack-stream");
+const webpack = require("webpack");
+const webpackConfig = require("./webpack.config.js");
 
 
 
-// // Webpack
+// Webpack
 
-// gulp.task('js', () => {
-//   gulp.src('./src/js/index.js')
-//     .pipe(webpackStream(webpackConfig), webpack)
-//     .pipe(gulp.dest('./dist/js'));
-// });
+const scripts = () => {
+  return gulp.src("./source/js/*.js")
+    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe(gulp.dest("./build/js"));
+};
+
+exports.scripts = scripts;
 
 
 // Delete
@@ -77,7 +77,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -92,24 +92,14 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/*.js", gulp.series("scripts")).on("change", sync.reload);
   gulp.watch("source/*.html", gulp.series("htmlMin")).on("change", sync.reload);
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, scripts, server, watcher
 );
 
-// JS-min
-
-const compress = () => {
-  return pipeline(
-    gulp.src("source/js/*.js"),
-    uglify(),
-    gulp.dest("build/js")
-  );
-}
-
-exports.compress = compress;
 
 // Sprite
 
@@ -161,9 +151,7 @@ exports.imgWebp = imgWebp;
 const build =  gulp.series(
     clean,
     copy,
-    compress,
-    styles,
-    sprite,
+    gulp.parallel(scripts, styles, sprite),
     htmlMin
   );
 
