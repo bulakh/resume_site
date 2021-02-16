@@ -116,7 +116,7 @@ exports.sprite = sprite;
 
 const htmlMin = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlmin({ collapseWhitespace: false }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
@@ -131,7 +131,7 @@ const images = () => {
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
@@ -141,7 +141,7 @@ exports.images = images;
 const imgWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 85}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.imgWebp = imgWebp;

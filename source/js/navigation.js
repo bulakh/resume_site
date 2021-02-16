@@ -38,4 +38,4 @@ aboutMeBtn.addEventListener(`click`, handleAboutMeButtonClick);
 myWorksBtn.addEventListener(`click`, handleMyWorksButtonClick);
 contactBtn.addEventListener(`click`, handleContactButtonClick);
 
-window.alert(`bad text for bad man gay`);
+// window.alert(`bad text for bad man gay`);
