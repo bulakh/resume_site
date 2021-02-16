@@ -9,3 +9,9 @@
     display: block;
   }
 }
+
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-right: 5.6rem;
+  }
+}

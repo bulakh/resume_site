@@ -5,16 +5,15 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
     gap: 5.15%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 2.45rem;
+    // margin-right: 5.65rem;
 
-    gap: 4.45%;
+    gap: 4.55%;
   }
 }
 
