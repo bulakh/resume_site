@@ -17,17 +17,17 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="#about-me">
+                <a class="site-list__link" href="#about-me" aria-label="Переход в Обо мне">
                   Обо мне
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#my-works">
+                <a class="site-list__link" href="#my-works" aria-label="Переход в Мои работы">
                   Мои работы
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#contact">
+                <a class="site-list__link" href="#contact" aria-label="Переход в Контакты">
                   Контакты
                 </a>
               </li>
@@ -48,12 +48,6 @@
           <div class="main__subtitle glitch" data-text="Веб-разработка">
             Веб-разработка
           </div>
-        </div>
-        <div class="navigation main__navigation">
-          <button class="navigation__button navigation__button--main navigation__button--active" type="button" aria-label="Переход на главную"></button>
-          <button class="navigation__button navigation__button--about-me" type="button" aria-label="Переход в Обо мне"></button>
-          <button class="navigation__button navigation__button--my-works" type="button" aria-label="Переход в Мои работы"></button>
-          <button class="navigation__button navigation__button--contact" type="button" aria-label="Переход в Контакты"></button>
         </div>
       </section>
       <section class="page-main__about-me about-me" id="about-me">
@@ -183,6 +177,20 @@
           <use xlink:href="/img/sprite.svg#up"></use>
         </svg>
       </button>
+      <ul class="navigation main__navigation">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--active" href="#main" aria-label="Переход на главную"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#about-me" aria-label="Переход в Обо мне"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#my-works" aria-label="Переход в Мои работы"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contact" aria-label="Переход в Контакты"></a>
+        </li>
+      </ul>
     </main>
 
     <footer class="page-footer container">

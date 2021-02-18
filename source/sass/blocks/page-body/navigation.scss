@@ -11,7 +11,7 @@
   }
 }
 
-.navigation__button {
+.navigation__item {
   width: 11px;
   height: 11px;
   padding: 0;
@@ -21,13 +21,19 @@
 
   cursor: pointer;
 
-  &:hover:not(.navigation__button--active),
-  &:focus:not(.navigation__button--active) {
+  &:hover:not(.navigation__item--active),
+  &:focus:not(.navigation__item--active) {
     outline: 4px solid $special-5;
   }
 }
 
-.navigation__button--active {
+.navigation__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navigation__link--active {
   box-shadow: 0 0 0 4px $special-4;
 
   cursor: default;
