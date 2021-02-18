@@ -1,41 +1,40 @@
 "use strict";
 
-// const buttonsNav = document.querySelectorAll(`.navigation__button`);
-// const sectionsNav = document.querySelectorAll(``)
+const navButtons = document.querySelectorAll(`.navigation__link`);
+const navSections = document.querySelectorAll(`main section`);
+const nav = document.querySelector(`.navigation`);
+const QUARTER = 0.25;
 
-// При нажатии на баттон переходит на секцию
-// При попадании секции в вьюпорт на баттон вешается класс актив
+const removeAllActiveClasses = () => {
+  for (let navButton of navButtons) {
+    navButton.classList.remove(`navigation__link--active`);
+  }
+};
 
+const addActiveClass = (id) => {
+  const selector = `.navigation__item a[href="#${id}"]`;
+  document.querySelector(selector).classList.add(`navigation__link--active`);
+};
 
-const sectionMainNav = document.querySelector(`.main`);
-const sectionAboutMeNav = document.querySelector(`.about-me`);
-const sectionMyWorksNav = document.querySelector(`.my-works`);
-const sectionContactNav = document.querySelector(`.contact`);
+window.addEventListener(`scroll`, () => {
+  const scrollPosition = document.documentElement.scrollTop;
 
-const mainBtn = document.querySelector(`.navigation__button--main`);
-const aboutMeBtn = document.querySelector(`.navigation__button--about-me`);
-const myWorksBtn = document.querySelector(`.navigation__button--my-works`);
-const contactBtn = document.querySelector(`.navigation__button--contact`);
+  for (let navSection of navSections) {
+    if (scrollPosition >= navSection.offsetTop - navSection.offsetHeight * QUARTER && scrollPosition < navSection.offsetTop + navSection.offsetHeight - navSection.offsetHeight * QUARTER) {
+      const currentID = navSection.attributes.id.value;
+      removeAllActiveClasses();
+      addActiveClass(currentID);
+    }
+  }
+});
 
-function handleMainButtonClick() {
-  sectionMainNav.scrollIntoView({block: `center`, behavior: `smooth`});
-}
+nav.addEventListener(`click`, (evt) => {
+  evt.preventDefault();
+  const currentID = evt.target.attributes.href.value;
+  const section = document.querySelector(currentID);
+  section.scrollIntoView({
+    behavior: `smooth`,
+    block: `center`
+  });
+});
 
-function handleAboutMeButtonClick() {
-  sectionAboutMeNav.scrollIntoView({block: `center`, behavior: `smooth`});
-}
-
-function handleMyWorksButtonClick() {
-  sectionMyWorksNav.scrollIntoView({block: `center`, behavior: `smooth`});
-}
-
-function handleContactButtonClick() {
-  sectionContactNav.scrollIntoView({block: `center`, behavior: `smooth`});
-}
-
-mainBtn.addEventListener(`click`, handleMainButtonClick);
-aboutMeBtn.addEventListener(`click`, handleAboutMeButtonClick);
-myWorksBtn.addEventListener(`click`, handleMyWorksButtonClick);
-contactBtn.addEventListener(`click`, handleContactButtonClick);
-
-// window.alert(`bad text for bad man gay`);
