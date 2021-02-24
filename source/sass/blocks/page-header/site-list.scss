@@ -7,16 +7,23 @@
 
     display: flex;
     justify-content: flex-end;
-    gap: 5.15%;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 4.55%;
   }
 }
 
 .site-list__item {
   margin-bottom: 0.8em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5.1%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 4.6%;
+  }
 }
 
 .site-list__link {
