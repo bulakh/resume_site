@@ -37,4 +37,3 @@ nav.addEventListener(`click`, (evt) => {
     block: `center`
   });
 });
-
