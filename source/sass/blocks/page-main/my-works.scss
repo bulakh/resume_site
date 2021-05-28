@@ -87,6 +87,11 @@
     background-size: 114%;
   }
 
+  &--bigtrip {
+    background-image: url("../img/bigtrip.jpg");
+    // background-size: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     &--catenergy {
       background-image: url("../img/cat_tablet.jpg");
