@@ -26,5 +26,11 @@ eval("\n\nconst navButtons = document.querySelectorAll(`.navigation__link`);\nco
   \*****************************/
 eval("\n\nconst navMain = document.querySelector(`.main-nav`);\nconst navToggle = document.querySelector(`.page-header__toggle`);\n\nnavMain.classList.add(`main-nav--hidden`);\nnavToggle.classList.remove(`page-header__toggle--nojs`);\n\nnavToggle.addEventListener(`click`, function () {\n  if (navToggle.classList.contains(`page-header__toggle--closed`)) {\n    navToggle.classList.remove(`page-header__toggle--closed`);\n    navToggle.classList.add(`page-header__toggle--opened`);\n  } else {\n    navToggle.classList.add(`page-header__toggle--closed`);\n    navToggle.classList.remove(`page-header__toggle--opened`);\n  }\n});\n\nnavToggle.addEventListener(`click`, function () {\n  if (navMain.classList.contains(`main-nav--hidden`)) {\n    navMain.classList.remove(`main-nav--hidden`);\n  } else {\n    navMain.classList.add(`main-nav--hidden`);\n  }\n});\n\n\n//# sourceURL=webpack://resume_site/./source/js/toggle.js?");
 }();
+!function() {
+/*!****************************!*\
+  !*** ./source/js/about.js ***!
+  \****************************/
+eval("\n\nconst worksList = document.querySelector(`.my-works__list`);\nconst textItems = worksList.querySelectorAll(`.my-works__text-about`);\n// const buttonsAbout = worksList.querySelectorAll(`.my-works__about`);\nconst DESKTOP_WIDTH = 1440;\n\ntextItems.forEach((textItem) => {\n  if (window.innerWidth < DESKTOP_WIDTH) {\n    textItem.style.display = `none`;\n  }\n});\n\nworksList.addEventListener(`click`, (evt) => {\n  textItems.forEach((textItem) => {\n    if (evt.target.dataset.name === textItem.dataset.name) {\n      if (textItem.style.display === `none`) {\n        evt.target.textContent = `Скрыть`;\n        textItem.style.display = `block`;\n      } else {\n        evt.target.textContent = `Подробнее`;\n        textItem.style.display = `none`;\n      }\n    }\n  });\n});\n\n\n//# sourceURL=webpack://resume_site/./source/js/about.js?");
+}();
 /******/ })()
 ;
