@@ -7,7 +7,8 @@ const config = {
     index: [
       "./source/js/button-up.js",
       "./source/js/navigation.js",
-      "./source/js/toggle.js"
+      "./source/js/toggle.js",
+      "./source/js/about.js",
     ]
   },
   optimization: {

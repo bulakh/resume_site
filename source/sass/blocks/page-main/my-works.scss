@@ -23,15 +23,25 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 2.8rem;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &:hover > .my-works__text-about {
+      display: block;
+    }
+  }
 }
 
 .my-works__text {
   margin-left: 0.3em;
+  margin-bottom: 1em;
 
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 1em;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +99,6 @@
 
   &--bigtrip {
     background-image: url("../img/bigtrip.jpg");
-    // background-size: 100%;
   }
 
   @media (min-width: $tablet-width) {
@@ -106,6 +115,40 @@
     &--catenergy {
       background-image: url("../img/cat_desktop.jpg");
     }
+  }
+}
+
+.my-works__about {
+  margin-bottom: 0.9rem;
+  padding: 0.5rem;
+
+
+  font-family: inherit;
+  border: 1px solid $basic-text;
+  background-color: transparent;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.my-works__text-about {
+  display: none;
+
+  background-color: $basic-bg;
+  opacity: 0.8;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 66%;
+    right: -82%;
+    left: 83%;
+    z-index: 99;
+
+    padding: 0.5rem;
+
+    border: 2px solid $basic-text;
+    opacity: 1;
   }
 }
 
