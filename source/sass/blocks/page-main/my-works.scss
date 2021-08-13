@@ -101,6 +101,10 @@
     background-image: url("../img/bigtrip.jpg");
   }
 
+  &--sixcities {
+    background-image: url("../img/sixcities.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     &--catenergy {
       background-image: url("../img/cat_tablet.jpg");
