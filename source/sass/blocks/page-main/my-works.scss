@@ -105,6 +105,10 @@
     background-image: url("../img/sixcities.jpg");
   }
 
+  &--miniprojects {
+    background-image: url("../img/miniprojects.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     &--catenergy {
       background-image: url("../img/cat_tablet.jpg");

@@ -2,7 +2,6 @@
 
 const worksList = document.querySelector(`.my-works__list`);
 const textItems = worksList.querySelectorAll(`.my-works__text-about`);
-// const buttonsAbout = worksList.querySelectorAll(`.my-works__about`);
 const DESKTOP_WIDTH = 1440;
 
 textItems.forEach((textItem) => {
